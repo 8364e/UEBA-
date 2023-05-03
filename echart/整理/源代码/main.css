@@ -1,0 +1,261 @@
+.header{
+    margin: 30px auto;
+    /*background-color: antiquewhite;*/
+    font-size: 30px;
+    background-image: url(./images/登录/标题框.png);
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+/*用户*/
+.user{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    /* background-color: pink; */
+    color: rgb(9, 233, 233);
+    cursor: pointer;
+}
+.user img{
+    width: 80px;
+    float: left;
+}
+.user .left{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+/*日期*/
+.date{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    height: 100px;
+    /*background-color: aqua;*/
+}
+
+.banner{
+    height: 600px;
+    /*background-color: black;*/
+}
+.title{
+    font-size: 18px;
+    line-height: 18px;
+    color: rgb(9, 233, 233);
+    /*background-color: blue;*/
+}
+.title .rube{
+    float: left;
+    margin-right: 10px;
+    width: 5px;
+    height: 18px;
+    background-color: rgb(9, 233, 233);
+}
+.banner .left{
+    float: left;
+    padding: 10px 20px;
+    margin-left: 1%;
+    width: 23%;
+    background-image: url(./images/main/左侧框.png);
+    background-size: 100% 100%;
+}
+.move{
+    height: 320px;
+    /*background-color: aquamarine;*/
+}
+.move p{
+    margin-top: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.week{
+    height: 280px;
+    /*background-color: blue;*/
+}
+.week img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80%;
+}
+.banner .mid{
+    float: left;
+    margin-left: 1%;
+    width: 50%;
+    /*background-color: aqua;*/
+}
+.mov{
+    height: 480px;
+    background-image: url(./images/main/视频框.png);
+    background-size: 100% 100%;
+}
+#videos-container{
+    margin: 30px auto;
+    width:720px; 
+    height:380px;
+    background-color: black;
+}
+.button{
+    margin-top: 10px;
+    height: 100px;
+    /*background-color: red;*/
+}
+.button button{
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 100px;
+    float: left;
+    width: 120px;
+    height: 60px;
+    display: block;
+    background-color: rgba(9, 233, 233, 0.01);
+    background-image: url(./images/main/训练按钮.png);
+    background-size: 100% 100%;
+    outline: none;
+    border: none;
+}
+.button button:last-child{
+    margin-right: 0px;
+}
+.banner .right{
+    float: right;
+    padding: 10px 20px;
+    margin-right: 1%;
+    width: 23%;
+    background-image: url(./images/main/左侧框.png);
+    background-size: 100% 100%;
+}
+.heart{
+    height: 180px;
+    /*background-color: pink;*/
+}
+.heart img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80%;
+}
+.meta{
+    height: 180px;
+    /*background-color: yellow;*/
+}
+.meta img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80%;
+}
+.pose{
+    height: 240px;
+    /*background-color: aquamarine;*/
+}
+.pose_form{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    /*background-color: antiquewhite;*/
+}
+.pose_form tr{
+    text-align: center;
+    /*background-color: aqua;*/
+}
+.up{
+    /*position: absolute;*/
+    width: 100%;
+    height: 65%;
+    /*background-color: antiquewhite;*/
+}
+
+.main{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 800px;
+    height: 450px;
+    /*background-color: palegoldenrod;*/
+    background-image: url(./images/边框/右3.png);
+    background-size: 800px 450px;
+}
+.main .mp4{
+    float: left;
+    margin-top: 70px;
+    margin-left: 65px;
+    width: 380px;
+    height: 316px;
+    background-color: black;
+}
+
+.main .button{
+    float: right;
+    margin-top: 100px;
+    margin-right: 100px;
+    right: 6%;
+    bottom: 13%;
+    width: 200px;
+    /*background-color: antiquewhite;*/
+}
+.main .button button{
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    /*background-color: aqua;*/
+    background-image: url(./images/边框/左3.png);
+    background-size: 100% 100%;
+    outline: none;
+    border: none;
+}
+.main .button button:hover{
+    /*background-color: antiquewhite;*/
+    color: black;
+    font-weight: 800;
+}
+.main .button .open{
+    color: aqua;
+}
+.main .button .start{
+    color: red;
+}
+.main .button .end{
+    color: green;
+}
+.way{
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 600px;
+    height: 300px;
+    background-image: url(./images/边框/左2.png);
+    background-size: 600px 300px;
+}
+.way .section{
+    margin: 60px auto;
+    width: 500px;
+    height: 200px;
+    /*background-color: antiquewhite;*/
+}
+.way .section .title{
+    font-size: 20px;
+}
+.way .section .text{
+    margin-top: 10px;
+}
+.tip{
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 600px;
+    height: 120px;
+    /*background-color: antiquewhite;*/
+    background-image: url(./images/边框/左1.png);
+    background-size: 600px 120px;
+}
+.tip .section{
+    margin: 10px auto;
+    width: 500px;
+    height: 200px;
+    /*background-color: antiquewhite;*/
+}
+.tip .section .title{
+    font-size: 18px;
+}
+.tip .section .text{
+    margin-top: 10px;
+}

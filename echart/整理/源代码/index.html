@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于UEBA架构的恶意网站识别系统</title>
+    <link rel="stylesheet" href="./use.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./lib/jquery.js"></script>
+</head>
+<body>
+    <div class="header">基于UEBA架构的威胁用户识别系统</div>
+    <!--登录-->
+    <div class="banner">
+        <div class="log">
+            <a href="#" id="denglu" style="color: rgba(4, 252, 252, 0.4)">登录</a>
+            <a href="#" id="zhuce">注册</a>
+        </div>
+        <div class="box1">
+            <div class="account">
+                <span>姓名：</span>
+                <input type="text" placeholder="请输入用户名" class="shuru">
+            </div>
+            <div class="password">
+                <span>密码：</span>
+                <input type="password" placeholder="请输入密码" class="shuru">
+            </div>
+            <div class="lic">
+                <input type="checkbox" class="input_check">
+                <span>记住用户名</span>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="account">
+                <span>姓名：</span>
+                <input type="text" placeholder="请输入用户名" class="shuru">
+            </div>
+            <div class="password">
+                <span>密码：</span>
+                <input type="password" placeholder="请输入密码" class="shuru">
+            </div>
+            <div class="password_que">
+                <span>确认密码：</span>
+                <input type="password" placeholder="请输入密码" class="shuru">
+            </div>
+            <div class="lic">
+                <input type="checkbox" class="input_check">
+                <span>同意用户协议</span>
+            </div>
+        </div>
+        <div class="submit1">
+            <input type="button" class="btn_log" value="立即登录">
+            <script>
+                let btn1 = document.querySelector('.btn_log')
+                btn1.addEventListener('click',function(){
+                    /*alert('登录成功！')*/
+                    //跳转到下一个界面
+                    window.location.href="./chose.html"
+                })
+            </script>
+        </div>
+        <div class="submit2">
+            <input type="button" class="btn_log" value="立即注册">
+            <script>
+                let btn2 = document.querySelector('.btn_log')
+                btn2.addEventListener('click',function(){
+                    /*alert('登录成功！')*/
+                    //跳转到下一个界面
+                    window.location.href="../../index1.html"
+                })
+            </script>
+        </div>
+        <script>
+            //登录、注册界面的切换
+            let denglu = document.querySelector('#denglu')
+            let zhuce = document.querySelector('#zhuce')
+            let banner = document.querySelector('.banner')
+            let box1 = document.querySelector('.box1')
+            let box2 = document.querySelector('.box2')
+            let submit1 = document.querySelector('.submit1')
+            let submit2 = document.querySelector('.submit2')
+            denglu.addEventListener('click',function(){
+                submit1.style.display = 'block'
+                submit2.style.display = 'none'
+                box1.style.display = 'block'
+                box2.style.display = 'none'
+                banner.style.height = '360px'
+                denglu.style.color = 'rgba(4, 252, 252, 0.4)'
+                zhuce.style.color = 'white'
+            })
+            zhuce.addEventListener('click',function(){
+                submit1.style.display = 'none'
+                submit2.style.display = 'block'
+                box1.style.display = 'none'
+                box2.style.display = 'block'
+                banner.style.height = '420px'
+                zhuce.style.color = 'rgba(4, 252, 252, 0.4)'
+                denglu.style.color = 'white'
+            })
+        </script>
+    </div>
+    <!-- <button id="btnGET">发起请求</button> -->
+    <script>
+        $(function(){
+            $('#btnGET').on('click',function(){
+                $.ajax({
+                    type:'GET',
+                    url:'http://www.liulongbin.top:3006/api/getbooks',
+                    data:{
+                        id:1
+                    },
+                    success:function(res){
+                        console.log(res)
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.title{
+    margin: auto;
+    margin-top: 100px;
+    /*background-color: aqua;*/
+    text-align: center;
+    font-size: 30px;
+    background-image: url(./images/登录/标题框.png);
+    background-size: 100% 50px;
+}
+.Bigbox{
+    margin: 20px auto;
+    width: 1200px;
+    height: 200px;
+    /*background-color: aquamarine;*/
+}
+.Bigbox a{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
+    /*background-color: antiquewhite;*/
+    background-image: url(./images/边框/chose.png);
+    background-repeat: no-repeat;
+    background-size: 250px 400px;
+}
+.Bigbox a:hover{
+    margin-top: 0px;
+}
+.txt{
+    font-size: 24px;
+    margin: 40px;
+}
+.box{
+    margin: auto;
+    width: 200px;
+    height: 220px;
+    /*background-color: rebeccapurple;*/
+}
+.box img{
+    width: 200px;
+    height: 110px;
+    border: 3px solid rgba(4, 252, 252);
+}
+.box p{
+    margin-top: 5px;
+}
+.collect {
+    font-size: 24px;
+    margin-left: 200px;
+}

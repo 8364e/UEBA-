@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基于UEBA架构的威胁用户识别系统</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="./js/vue.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>报警事件序列分析</h1>
+      <div class="showTime">当前时间：2023年3月29日-20时54分30秒</div>
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel bar">
+          <h2>
+            最近已处理威胁数量 
+            <a href="javascript:;">2022</a>
+            <a href="javacript:;"> 2023</a>
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>最近已处理异常数量</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li>87%</li>
+              <li>453</li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li>安全度</li>
+              <li>今日已处理</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+        <div class="input-group">
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">请输入IP地址</label>
+        <button id="but">
+          <span class="span-mother">
+              <span>S</span>
+              <span>e</span>
+              <span>a</span>
+              <span>r</span>
+              <span>c</span>
+              <span>h</span>
+          </span>
+          <span class="span-mother2">
+            <span>S</span>
+            <span>e</span>
+            <span>a</span>
+            <span>r</span>
+            <span>c</span>
+            <span>h</span>
+          </span>
+        </button>
+      </div>
+        </div>
+      </div>
+      <div id="winmsg">
+        <!-- 创建主窗口 -->
+        <div id="winms">
+        <table>
+          <tr>
+            <td>日期</td>
+            <td>IP</td>
+            <td>发生的异常或威胁</td>
+            <td>发生地点</td>
+          </tr>
+          <tr>
+            <td>2023-02-15</td>
+            <td>192.101.1.10</td>
+            <td>统计指标异常</td>
+            <td>私人IP</td>
+          </tr>
+          <tr>
+            <td>2023-01-30</td>
+            <td>192.101.1.10</td>
+            <td>时序异常</td>
+            <td>私人IP</td>
+          </tr>
+          <tr>
+            <td>2022-10-22</td>
+            <td>192.101.1.10</td>
+            <td>模式异常</td>
+            <td>私人IP</td>
+          </tr>
+          <tr>
+            <td>2022-07-02</td>
+            <td>192.101.1.10</td>
+            <td>异常持续时间较长</td>
+            <td>私人IP</td>
+          </tr>
+          <tr>
+            <td>2022-03-13</td>
+            <td>192.101.1.10</td>
+            <td>模式异常</td>
+            <td>私人IP</td>
+          </tr>
+          <tr>
+            <td>2022-01-21</td>
+            <td>192.101.1.10</td>
+            <td>序列异常</td>
+            <td>私人IP</td>
+          </tr>
+          <tr>
+            <td>2021-10-30</td>
+            <td>192.101.1.10</td>
+            <td>序列异常</td>
+            <td>私人IP</td>
+          </tr>
+        </table>
+            <a href="./index1.html">返回主页面</a>
+        </div>
+    </div>
+      <div class="column">
+        <div class="panel line2">
+          <h2>危险度</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+       <!-- 1.2 异常/异常 设备监控 -->
+       <div class="panel monitor"> 
+        <div class="inner">
+            <!-- tab栏切换 页签 -->
+            <div class="tabs">
+                <a href="javascript:void(0)"class="active">出现威胁设备监控</a>
+                <a href="javascript:void(0)">出现异常设备监控</a>
+            </div>
+            <!-- tab栏切换 页面1  -->
+            <div class="content">
+                <div class="head">
+                    <span>异常ip</span>
+                    <span>异常原因</span>
+                    <span>发生时间</span>
+                </div>
+                <div class="carousel">
+                  <ul>
+                    <li><span> 128.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 129.0.10.0</span><span>时序异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.10.0.0</span><span>序列异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.0.10.10</span><span>模式异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.10.10.0</span><span>序列异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.110.0.110</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.0.110.0</span><span>模式异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 129.0.10.0</span><span>时序异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.0.110.10</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 128.0.110.0</span><span>时序异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 130.110.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 130.10.0.0</span><span>模式异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 190.0.10.0</span><span>序列异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 192.0.0.10</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 192.0.110.0</span><span>序列异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 192.110.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 197.0.0.0</span><span>时序异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 192.110.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 197.10.0.0</span><span>模式异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 192.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 224.0.0.0</span><span>序列异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 239.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 128.101.0.0</span><span>模式异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 128.0.101.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 128.101.0.0</span><span>序列异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- tab栏切换 页面2 -->
+        <div class="content" style="display: none;">
+            <div class="head"><span>威胁ip</span><span>威胁原因</span><span>发生时间</span></div>
+            <div class="carousel">
+                <ul>       
+                    <li><span> 128.0.101.0</span><span>异常持续时间较长</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 224.0.10.0</span><span>异常罕见度高</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.10.0.0</span><span>异常数据丰富</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.0.10.10</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 128.10.10.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.34</span></li>
+                    <li><span> 235.110.0.110</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 128.0.110.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 129.0.10.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.35</span></li>
+                    <li><span> 128.0.110.10</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 128.0.110.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 224.110.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 130.10.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.36</span></li>
+                    <li><span> 223.0.10.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 192.0.0.10</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 240.0.110.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 191.110.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 197.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.37</span></li>
+                    <li><span> 192.110.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 240.10.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 192.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 224.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 239.0.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 190.101.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 191.0.101.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                    <li><span> 128.101.0.0</span><span>统计指标异常</span><span class="showTime1">2023.3.29-20.54.38</span></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+      let date = document.querySelector('.showTime');
+      GetDateTime();
+      //获取时间
+      function GetDateTime() {
+          var getDate = new Date;
+          let dateYear = getDate.getFullYear();             //获取年 
+          let dateMonth = getDate.getMonth() + 1;           //获取月  
+          let dateDate = getDate.getDate();                 //获取当日
+          let dateHours = getDate.getHours();               //获取小时
+          let dateMinutes = getDate.getMinutes();           //获取分钟
+          let dateSeconds = getDate.getSeconds();           //获取秒
+          dateMonth = dateMonth < 10 ? "0" + dateMonth : dateMonth;
+          dateDate = dateDate < 10 ? "0" + dateDate : dateDate;
+          dateHours = dateHours < 10 ? "0" + dateHours : dateHours;
+          dateMinutes = dateMinutes < 10 ? "0" + dateMinutes : dateMinutes;
+          dateSeconds = dateSeconds < 10 ? "0" + dateSeconds : dateSeconds;
+          return dateYear + "." + dateMonth + "." + dateDate + " " + dateHours + ":" + dateMinutes + ":" + dateSeconds;
+      }
+      //定时器函数
+      setInterval(function(){
+          date.innerHTML = GetDateTime()
+      },1000)
+      </script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      var but=document.getElementById("but");
+      but.onclick=function(){
+        var winmsg=document.getElementById("winmsg").value
+        alert(winmsg)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+.header{
+    margin: 60px auto;
+    font-size: 25px;
+    background-image: url(./images/登录/标题框.png);
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 900;
+}
+.banner{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 360px;
+    background-image: url(./images/登录/登录框.png);
+    background-size: 100% 100%;
+    /*border-radius: 10px;*/
+}
+.banner .log{
+    margin: auto;
+    width: 400px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    /*background-color: antiquewhite;*/
+}
+/*登录注册*/
+.banner a{
+    float: left;
+    /*background-color: aqua;*/
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+.banner a:hover{
+    color: rgb(95 110 191 / 40%);
+}
+/*账号密码*/
+.banner .box1{
+
+    margin: auto;
+    padding-top: 10px;
+    width: 440px;
+    /*background-color: red;*/
+}
+.banner .box1 .account{
+    /*background-color: antiquewhite;*/
+    margin: 0 auto;
+    cursor: default;
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+}
+.banner .box1 .password{
+    /*background-color: antiquewhite;*/
+    margin: 0 auto;
+    cursor: default;
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+}
+.banner .box1 .shuru{
+    color: white;;
+    padding-left: 20px;
+    height: 40px;
+    width: 260px;
+    background-color: rgb(95 110 191 / 40%);
+    background-image: url(./images/边框/左3.png);
+    background-size: 260px 40px;
+    border: none;
+    outline: none;
+}
+.banner .box1 input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner .box1 span{
+    font-size: 16px;
+    color: white;
+}
+.banner .box1 .lic{
+    height: 20px;
+    /*background-color: black;*/
+    line-height: 20px;
+    margin-right: 60px;
+}
+.banner .box1 .lic span{
+    float: right;
+    display: block;
+    color: white;
+}
+/**/
+.banner .box2{
+    display: none;
+    margin: auto;
+    padding-top: 10px;
+    width: 440px;
+    /*background-color: red;*/
+}
+.banner .box2 .account{
+    /*background-color: antiquewhite;*/
+    margin: 0 auto;
+    cursor: default;
+    width: 360px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+}
+.banner .box2 .password{
+    /*background-color: antiquewhite;*/
+    margin: 0 auto;
+    cursor: default;
+    width: 360px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+}
+.banner .box2 .password_que{
+    /*background-color: antiquewhite;*/
+    margin-left: 24px;
+    cursor: default;
+    width: 360px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+}
+.banner .box2 .shuru{
+    color: white;
+    padding-left: 20px;
+    height: 40px;
+    width: 260px;
+    background-color:rgb(95 110 191 / 40%);
+    background-image: url(./images/边框/左3.png);
+    background-size: 260px 40px;
+    border: none;
+    outline: none;
+}
+.banner .box2 input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner .box2 span{
+    font-size: 16px;
+    color: white;
+}
+.que{
+    margin-left: 0px;
+}
+.banner .box2 .lic{
+    float: right;
+    height: 20px;
+    /*background-color: black;*/
+    line-height: 20px;
+    margin-right: 60px;
+}
+.banner .box2 .lic span{
+    float: left;
+    display: block;
+    color: white;
+}
+/* 复选框checkbox */
+.input_check {
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: none;
+}
+/* 未选 */
+.input_check{
+    float: right;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid rgb(0, 221, 224);
+    width: 16px;
+    height: 16px;
+}
+input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus{
+    outline: none;    /* outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。outline 属性设置元素周围的轮廓线。*/
+}
+/* 已选 */
+.input_check:checked {
+    display: inline-block;
+    background-color: rgb(0, 221, 224);
+    width: 16px;
+    height: 16px;
+    border: none;
+}
+.banner .submit1{
+    margin: 30px auto;
+    height: 50px;
+    width: 160px;
+    line-height: 50px;
+    /*background-color: blueviolet;*/
+    background-image: url(./images/边框/左3.png);
+    background-size: 100% 100%;
+    /*border-top: 1px solid skyblue;*/
+    outline: none;
+}
+.banner .submit1 input{
+    
+    background-color: rgb(95 110 191 / 40%);
+    height: 50px;
+    width: 160px;
+    border: none;
+    /*border: 1px solid white;*/
+    /*border-radius: 10px;*/
+    font-family: cursive;
+}
+.banner .submit2{
+    display: none;
+    margin: 30px auto;
+    height: 50px;
+    width: 160px;
+    line-height: 50px;
+    /*background-color: blueviolet;*/
+    background-image: url(./images/边框/左3.png);
+    background-size: 100% 100%;
+    /*border-top: 1px solid skyblue;*/
+    outline: none;
+}
+.banner .submit2 input{
+    
+    background-color: rgb(95 110 191 / 40%);
+    height: 50px;
+    width: 160px;
+    border: none;
+    /*border: 1px solid white;*/
+    /*border-radius: 10px;*/
+}
+.btn_log{
+    color: white;
+    font-size: 24px;
+}
